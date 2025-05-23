@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Bold';
+    src: url(Fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(Fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+}
+@font-face {
+    font-family: 'Title';
+    src: url(Fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
+.spoti320{
+    color: #fff;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: none;
+    background-color: #121212;
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    box-sizing: border-box;
+}
+.spotifyy{
+    height: 100%;
+}
+.spotifyy1{
+    display: block;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    z-index: unset;
+}
+.spotify2{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.spotify3{
+    position: fixed;
+    background-color: rgb(0,0,0,0.5);
+    gap: 16px;
+    height: 56px;
+    left: 0;
+    padding: 16px;
+    right: 0;
+    top: 0;
+    transition: background-color .4s ease;
+    z-index: 2;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.spotify3::before{
+    background-color: rgb(0,0,0,0.5);
+    bottom: 0;
+    height: 56px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color .4s ease;
+    z-index: -1;
+}
+.spotify4{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.spotLogo{
+    height: 32px;
+    color: #fff;
+    text-decoration: none;
+}
+.spotifyImg{
+    stroke: transparent;
+    fill: #fff;
+    height: 24px;
+}
+.restSpoti{
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.restSpot1{
+    display: flex;
+}
+.restSpot2{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.openBut{
+    font-weight: 700;
+    font-family: Bold;
+    font-size: 0.8125rem;
+    align-self: center;
+    min-inline-size: 0;
+    padding: 0;
+    background-color: initial;
+    border: 0;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    will-change: transform;
+}
+.OpenBut2{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 9999px;
+    color: #000;
+    display: flex;
+    font-size: inherit;
+    justify-content: center;
+    position: relative;
+    transition: inherit;
+    transition-property: background-color,transform,-webkit-transform;
+    min-block-size: 32px;
+    padding-block: 4px;
+    padding-inline: 16px;
+}
+.threeBar{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box
+}
+.thhreeBar1{
+    /* visibility: visible; */
+    z-index: 6;
+    background: none;
+    color: #fff;
+    margin: 0;
+    margin-inline-start: 16px;
+    min-block-size: auto;
+    padding: 0;
+    text-align: start;
+    /* display: flex; */
+    /* -webkit-box-align: center;
+    align-items: center; */
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.thhreeBar2{
+    position: static;
+    display: flex;
+}
+.Menu{
+    height: 24px;
+    width: 24px;
+}
+.rest{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    isolation: isolate;
+    -webkit-box-flex: 1;
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 0px 0;
+}
+.rest1{
+    margin-top: 56px;
+    position: relative;
+}
+.rest2{
+    box-sizing: border-box;
+}
+.restt3{
+    padding: 0 16px;
+}
+.trendSong{
+    display: -webkit-box;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.trendSong1{
+    font-size: 1.25rem;
+    font-family: Bold;
+    font-weight: 700;
+    text-wrap: balance;
+    box-sizing: border-box;
+    color: inherit;
+    margin-block:0;
+}
+.trendSong2{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: inherit;
+}
+.imgSong{
+    display: flex;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    gap: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.imgSong1,.secImg{
+    margin-inline-start: 8px;
+    max-inline-size: 168px;
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 6px;
+    color: #fff;
+    min-block-size: 48px;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.imgSong2{
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    cursor: pointer;
+}
+.imgSong3{
+    /* display: none; */
+    box-sizing: border-box;
+}
+.imgWrite{
+    column-gap: 12px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.imgWrite2{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-basis: 100%;
+    align-items: flex-start;
+}
+.imgWrite3{
+    font-family: Title;
+    font-size: 1rem;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: inherit;
+    margin-block: 0;
+    overflow-wrap: anywhere;
+    outline: none;
+    text-decoration: none;
+}
+.imgWrite4{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.imgWrite4::after{
+    inset: 12px;
+    border-radius: inherit;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
