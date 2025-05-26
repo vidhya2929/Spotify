@@ -210,9 +210,13 @@
     color: inherit;
     margin-block: 0;
 }
+.write{
+    padding-bottom: 10px;
+}
 .write,.popuArt2{
     overflow-wrap: anywhere;
     text-decoration: none;
+    /* white-space: nowrap; */
     display: inline-flex;
     align-items: center;
     color: inherit;
@@ -230,13 +234,14 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
-    gap: 0;
+    gap: 16px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    padding: 0px 16px;
 }
 .img1{
-    margin-inline-start: 8px;
+    /* margin-inline-start: 8px; */
     max-inline-size: 168px;  /*beware*/
 }
 .img1{
@@ -265,7 +270,9 @@
     border-radius: 5px;
 }
 .text{
-    column-gap: 12px,12px;
+    column-gap: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     -webkit-box-align: center;
     align-items: center;
     display: flex;
@@ -290,6 +297,8 @@
     text-decoration: none;
 }
 .textLast{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
     box-sizing: border-box;
@@ -299,4 +308,63 @@
 }
 .popuArt2{
     text-decoration: none;
+}
+.footStart{
+   text-align:flex-start; 
+}
+.footCompany{
+    background-color: rgb(18,18,18);
+    padding: 8px 16px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footPadd{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+.footCompany1{
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 32px;
+}
+.compDet{
+    list-style: none;
+    padding-inline-start: 0px;
+    box-sizing: border-box;
+    padding-inline: 0px 0px;
+    margin-block: 0px;
+    overflow-wrap: break-word;
+}
+.compDet1{
+    color: rgb(255,255,255);
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Bold';
+    padding-block-end: 8px;
+}
+.firstchildComp{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: 'Regular';
+    font-size: 0.6875rem;
+    overflow-wrap: anywhere;
+   display: inline-flex;
+    align-items: center;
+}
+.eachComp{
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Regular';
+    padding-block-end: 8px;
+    color: inherit;
+}
+.paddingOnly{
+    padding-left: 16px;
+    padding-right: 16px;
+
 }
